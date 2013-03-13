@@ -1,0 +1,25 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-12-right-swipr_development
+  pool: 5
+  username: Tony
+  password:
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-12-right-swipr_test
+  pool: 5
+  username: Tony
+  password:
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-12-right-swipr_production
+  pool: 5
+  username: r2013-03-12-right-swipr
+  password:
