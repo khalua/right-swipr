@@ -26,4 +26,9 @@
 class Subscriber < ActiveRecord::Base
   attr_accessible :tagline, :bio, :preferences, :bodytype, :location, :status, :ethnicity, :gender, :age, :occupation, :interests, :political, :religion, :education, :income
   has_one :user, :as => :userable
+  validates :tagline, :bio, :gender, :age, :presence => true
+  validates :age, :numericality => { :greater_than_or_equal_to => 18 }
 end
+
+
+ #   it 'fails validation if tagline, bio, gender or age are not present or age < 18 years old' do

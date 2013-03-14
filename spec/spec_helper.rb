@@ -7,6 +7,7 @@ require 'database_cleaner'
 
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 RSpec.configure do |config|
+  config.formatter = 'Growl::RSpec::Formatter'
   config.before(:suite) do
     DatabaseCleaner.strategy = :truncation
   end

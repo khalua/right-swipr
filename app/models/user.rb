@@ -32,4 +32,5 @@ class User < ActiveRecord::Base
   attr_accessible :username, :email, :password, :password_confirmation
 
   belongs_to :userable, :polymorphic => true
+  validates :username, :presence => true
 end

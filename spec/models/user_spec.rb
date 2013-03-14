@@ -49,7 +49,10 @@ describe User do
       user = User.create(username: 'bob', email: 'bob@gmail.com', password: 'a', password_confirmation: 'a')
       expect(user.id).to_not be nil
     end
+
+    it 'fails validation if userid or email is blank whike supplying password' do
+      user = User.create(:password => 'a', :password_confirmation => 'a')
+      expect(user.id).to be nil
+    end
   end
 end
-
-

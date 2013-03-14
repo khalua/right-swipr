@@ -71,6 +71,10 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.4.0)
+    growl (1.0.3)
+    growl-rspec (0.0.1)
+      growl
+      rspec
     guard (1.6.2)
       listen (>= 0.6.0)
       lumberjack (>= 1.0.2)
@@ -205,6 +209,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.1)
   database_cleaner
+  growl-rspec
   guard-rspec
   haml
   jquery-rails

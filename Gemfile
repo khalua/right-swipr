@@ -14,6 +14,7 @@ end
 
 
 group :development, :test do
+  gem 'growl-rspec'
   gem 'guard-rspec'
   gem 'rb-fsevent'
   gem 'rspec-rails'
