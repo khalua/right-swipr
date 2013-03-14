@@ -14,6 +14,8 @@ end
 
 
 group :development, :test do
+  gem 'guard-rspec'
+  gem 'rb-fsevent'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
